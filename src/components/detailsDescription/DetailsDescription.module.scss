@@ -1,0 +1,16 @@
+.description {
+	@apply font-robotoRegular text-[18px] leading-6;
+}
+.text {
+	@apply mt-6;
+	&::first-child {
+		@apply mt-0;
+	}
+}
+.bold {
+	@apply font-novaBold text-[20px] leading-[25px];
+}
+.benefit {
+	@apply relative before:content-[""] before:absolute before:block before:h-[9px] before:w-[9px] before:bg-primarySilver 
+	before:top-[3px] before:left-[-20px];
+}

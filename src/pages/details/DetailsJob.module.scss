@@ -1,0 +1,21 @@
+.detailsContainer {
+	@apply max-w-[1256px] mx-auto py-14;
+}
+.row {
+	@apply flex justify-between;
+}
+.info {
+	@apply pr-[52px] w-full mr-[82px] text-primaryBlue;
+}
+.btnBack {
+	@apply w-[213px] h-[50px] relative right-20 block text-xs bg-[#e4e5ea] font-novaSemiBold rounded-xl;
+}
+.arrowRoute {
+	@apply absolute top-[16px] left-[23px];
+}
+.textRoute {
+	@apply absolute top-[18px] left-[52px];
+}
+.map {
+	@apply max-w-[402px] w-full border border-blue-400;
+}

@@ -1,24 +1,35 @@
+//CSS
 import styles from "./Job.module.scss";
-import Test from "assets/images/test.png";
+//Images
 import Location from "assets/images/location.svg";
 import Star from "assets/images/star.svg";
 import bookMarks from "assets/images/bookmark.svg";
-import { Data } from "type";
-//{id, name, email, phone, title, salary, address, benefits, location, pictures, createdAt, updatedAt, desciption, employment_type}: Data
+//Instrumets
+import {Link} from "react-router-dom";
+//Types
+import { JobItem } from "type";
 
-export const Job = ({id, name, email, phone, title, salary, address, benefits, location, pictures, createdAt, updatedAt, desciption, employment_type}: Data) =>{
+interface JobProps {
+	job: JobItem,
+	getJobId: (id: string) => void 
+}
+
+export const Job = ({job, getJobId}: JobProps) =>{
+	const {id, name, email, phone, title, salary, address, benefits, location, pictures, createdAt, updatedAt, description, employment_type} = job;
 	return (
 		<li className={styles.job}>
 			<img src={pictures[0]} className={styles.img} alt="avatar"/>
 			<div className={styles.row}>
 				<div className={styles.item}>
 					<div className={styles.info__container}>
-						<h1 className={styles.title}>{title}</h1>
-						<div className={styles.benefits}>
+						<Link to="/details" className={styles.title} onClick={() =>{
+							getJobId(id);
+						}}>{title}</Link>
+						<ul className={styles.benefits}>
 							{
-								benefits.map(benefit => <span key={benefit} className={styles.thin_text}>{benefit}</span>)
+								benefits.map(benefit => <li key={benefit} className={`${styles.thin_text} ${styles.benefit}` }>{benefit}</li>)
 							}
-						</div>
+						</ul>
 						<span className={`${styles.thin_text} ${styles.location}`}>
 							<img src={Location} alt="location" className="mr-2" />
 							 {address}

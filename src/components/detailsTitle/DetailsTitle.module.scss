@@ -1,0 +1,15 @@
+.row {
+	@apply flex items-start justify-between;
+}
+.title {
+	@apply text-2xl max-w-[501px] font-novaBold;
+}
+.salary {
+	@apply text-xl font-novaBold;
+}
+.salaryType {
+	@apply text-lg font-robotoRegular;
+}
+.date {
+	@apply text-lg text-opacityBlue tracking-[0.2px] font-robotoRegular;
+}

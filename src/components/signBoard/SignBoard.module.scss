@@ -1,0 +1,9 @@
+.signBoard {
+	@apply w-[222px] h-[49px] flex justify-center items-center border rounded-lg font-novaBold;
+}
+.blue {
+	@apply border border-singBoardBlue bg-singBoardBlue text-singBoardBlue;
+}
+.yellow {
+	@apply border border-singBoardYellow bg-singBoardYellow text-singBoardYellow;
+}

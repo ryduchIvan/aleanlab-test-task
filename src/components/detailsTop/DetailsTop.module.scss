@@ -1,0 +1,18 @@
+.row {
+	@apply flex items-center justify-between;
+}
+.title {
+	@apply font-novaBold text-[28px];
+}
+.options {
+	@apply flex items-center;
+}
+.option {
+	@apply flex items-center mr-6 font-robotoRegular;
+	&:last-child {
+		@apply mr-0;
+	}
+}
+.icon {
+	@apply mr-2;
+}

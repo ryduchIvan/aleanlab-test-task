@@ -18,13 +18,23 @@
   @apply max-w-[712px];
 }
 .title {
-  @apply font-novaRegular text-lg text-primary-blue  tracking-tightest md:font-novaBold md:text-xl;
+  @apply font-novaRegular text-lg text-primaryBlue  tracking-tightest md:font-novaBold md:text-xl;
 }
 .thin_text {
-  @apply block  text-primary-silver tracking-[0.2px] font-novaRegular;
+  @apply block text-primarySilver tracking-[0.2px] font-novaRegular;
 }
 .benefits {
   @apply flex justify-start;
+}
+.benefit {
+  @apply relative ml-4 before:content-[""] before:block before:w-1 before:h-1 before:bg-primarySilver before:rounded-full before:absolute
+  before:top-[10px] before:right-[-10px];
+  &:first-child {
+    @apply ml-0;
+  }
+  &:last-child {
+    @apply before:hidden;
+  }
 }
 .location {
   @apply flex mt-2 mr-2;

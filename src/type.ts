@@ -1,6 +1,6 @@
-export type Datas = Data[];
+export type Jobs = JobItem[];
 
-export type Data = {
+export type JobItem = {
 	id: string, 
 	name: string,
 	email: string,
@@ -16,6 +16,6 @@ export type Data = {
 	pictures: string[],
 	createdAt: string,
 	updatedAt: string,
-	desciption: string,
+	description: string,
 	employment_type: string[]
 };

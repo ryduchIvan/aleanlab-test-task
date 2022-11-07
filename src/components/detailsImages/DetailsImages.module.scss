@@ -1,0 +1,15 @@
+.title {
+	@apply font-novaBold text-[28px] border-b pb-2 mb-[15px];
+}
+.row {
+	@apply flex w-full mt-3;
+}
+.col {
+	@apply mr-[10px];
+	&::last-child {
+		@apply mr-0;
+	}
+}
+.img {
+	@apply w-[200px] h-[116px] rounded-xl object-cover;
+}
