@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/ryduchIvan/aleanlab-test-task/static/css/main.e775f045.css",
+    "main.js": "/ryduchIvan/aleanlab-test-task/static/js/main.8826ddfa.js",
+    "static/js/787.e411ae00.chunk.js": "/ryduchIvan/aleanlab-test-task/static/js/787.e411ae00.chunk.js",
+    "static/media/Roboto-Regular.ttf": "/ryduchIvan/aleanlab-test-task/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
+    "static/media/ProximaNova-Light.woff": "/ryduchIvan/aleanlab-test-task/static/media/ProximaNova-Light.6f5ad2ca80abea2876d4.woff",
+    "static/media/ProximaNova-Regular.woff": "/ryduchIvan/aleanlab-test-task/static/media/ProximaNova-Regular.99528640efded3e12591.woff",
+    "static/media/ProximaNova-Bold.woff": "/ryduchIvan/aleanlab-test-task/static/media/ProximaNova-Bold.1f267da183b3d4fe3d5b.woff",
+    "static/media/ProximaNova-Semibold.woff": "/ryduchIvan/aleanlab-test-task/static/media/ProximaNova-Semibold.a71877a1eef65838ed4c.woff",
+    "static/media/star.svg": "/ryduchIvan/aleanlab-test-task/static/media/star.940f154bce8c4fba195c32ab44b144f2.svg",
+    "static/media/mobileStar.svg": "/ryduchIvan/aleanlab-test-task/static/media/mobileStar.b0e5980fe13359965142.svg",
+    "static/media/share.svg": "/ryduchIvan/aleanlab-test-task/static/media/share.6f79270a34db1bb2e72046412a81c324.svg",
+    "index.html": "/ryduchIvan/aleanlab-test-task/index.html",
+    "static/media/preload.svg": "/ryduchIvan/aleanlab-test-task/static/media/preload.5cf5d5a6e26ae68574331486ac973e38.svg",
+    "static/media/SilverMarker.svg": "/ryduchIvan/aleanlab-test-task/static/media/SilverMarker.d9757d2b315138702fdd2a9a45f1cacb.svg",
+    "static/media/arrow.svg": "/ryduchIvan/aleanlab-test-task/static/media/arrow.81b0f26cb6486aa14408fc44c9104536.svg",
+    "static/media/WhiteMarker.svg": "/ryduchIvan/aleanlab-test-task/static/media/WhiteMarker.017f13f438e4e84738b89f28128b4c49.svg",
+    "static/media/bookMark.svg": "/ryduchIvan/aleanlab-test-task/static/media/bookMark.49e88a2e5b231b4508360cfaf0dc5d1e.svg",
+    "static/media/location.svg": "/ryduchIvan/aleanlab-test-task/static/media/location.1c093ca173a538132f1ce31ab6296061.svg",
+    "main.e775f045.css.map": "/ryduchIvan/aleanlab-test-task/static/css/main.e775f045.css.map",
+    "main.8826ddfa.js.map": "/ryduchIvan/aleanlab-test-task/static/js/main.8826ddfa.js.map",
+    "787.e411ae00.chunk.js.map": "/ryduchIvan/aleanlab-test-task/static/js/787.e411ae00.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e775f045.css",
+    "static/js/main.8826ddfa.js"
+  ]
+}
