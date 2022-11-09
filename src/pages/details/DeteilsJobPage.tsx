@@ -23,16 +23,8 @@ interface DetailsPageProps{
 	job: JobItem | null
 }
 
-const defaultCenter = {
-	lat: 44,
-	lng:55 
-}
-
 export const DetailsJobPage = ({job}: DetailsPageProps) =>{
-	const testCenter = {
-		lat: 48.2219, 
-		long: 16.3511
-	}
+
 	return(
 		<div className={styles.detailsContainer}>
 			{

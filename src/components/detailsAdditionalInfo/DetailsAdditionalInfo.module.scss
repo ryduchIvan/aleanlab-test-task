@@ -3,16 +3,20 @@
 	&::last-child {
 		@apply mt-0;
 	}
+	foo: bar;
 }
 .subtitle {
 	@apply text-lg font-robotoRegular;
+	foo: bar;
 }
 .row {
 	@apply mt-[10px] flex;
+	foo: bar;
 }
 .col {
 	@apply mr-2 w-[222px] h-[49px];
 	&::last-child {
 		@apply mr-0;
 	}
+	foo: bar;
 }

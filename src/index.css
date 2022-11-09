@@ -8,19 +8,19 @@
 }
 @font-face {
   font-family: "Nova-regular";
-  src: url("./assets/fonts/ProximaNova-Regular.woff");
+  src: url("assets/fonts/ProximaNova-Regular.woff");
 }
 @font-face {
   font-family: "Nova-light";
-  src: url("./assets/fonts/ProximaNova-Light.woff");
+  src: url("assets/fonts/ProximaNova-Light.woff");
 }
 @font-face {
   font-family: "Nova-semiBold";
-  src: url("./assets/fonts/ProximaNova-Semibold.woff");
+  src: url("assets/fonts/ProximaNova-Semibold.woff");
 }
 @font-face {
   font-family: "Roboto-regular";
-  src: url("./assets/fonts/Roboto-Regular.ttf");
+  src: url("assets/fonts/Roboto-Regular.ttf");
 }
 body {
   @apply min-w-[400px] font-novaRegular;

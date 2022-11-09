@@ -15,7 +15,7 @@ interface JobProps {
 }
 
 export const Job = ({job, getJobId}: JobProps) =>{
-	const {id, name, email, phone, title, salary, address, benefits, location, pictures, createdAt, updatedAt, description, employment_type} = job;
+	const {id,title,address,benefits,pictures,createdAt} = job;
 	const date = new Date(createdAt).toString().slice(0,15);
 	return (
 		<li className={styles.job}>

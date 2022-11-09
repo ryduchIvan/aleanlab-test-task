@@ -1,3 +1,4 @@
+//CSS
 import styles from "./LabelMap.module.scss";
 //Images
 import SilverMarker from "assets/images/SilverMarker.svg";

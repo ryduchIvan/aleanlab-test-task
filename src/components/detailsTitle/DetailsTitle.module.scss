@@ -1,18 +1,24 @@
 .row {
 	@apply flex flex-col items-start justify-between xl:flex-row;
+	foo: bar;
 }
 .title {
 	@apply text-[24px] leading-[30px] max-w-[501px] font-novaBold relative;
+	foo: bar;
 }
 .date {
 	@apply text-[13px] text-opacityBlue leading-[25px] font-robotoRegular absolute bottom-[-50px] left-0 xl:bottom-[-35px] lg:text-[18px];
+	foo: bar;
 }
 .money {
 	@apply flex flex-col-reverse ml-auto mr-0 xl:flex-col items-end;
+	foo: bar;
 }
 .salary {
 	@apply text-xl font-novaBold;
+	foo: bar;
 }
 .salaryType {
 	@apply text-lg font-robotoRegular text-mobileBlue lg:text-primaryBlue;
+	foo: bar;
 }

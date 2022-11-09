@@ -7,6 +7,8 @@ import {Route, Routes} from "react-router-dom";
 //Components
 import { JobList } from 'pages/jobList/JobList';
 import { DetailsJobPage } from 'pages/details/DeteilsJobPage';
+
+import { NotFound } from "pages/notFound/NotFound";
 //url
 import {url} from "api";
 
@@ -44,6 +46,7 @@ function App() {
     <Routes>
       <Route path='/' element={<JobList jobs={jobs} getJobId={getJobId}/>}/>
       <Route path='/details' element={<DetailsJobPage job={job ? job : null}/>}/>
+      <Route path="/*" element={<NotFound/>}/>
     </Routes>
    </>
   )

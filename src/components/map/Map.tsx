@@ -1,5 +1,8 @@
+//Hooks
 import { useRef, useCallback} from "react";
+//Google maps
 import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
+//Images
 import {defaultTheme} from "./theme";
 import { CustomMarker } from "components/customMarker/customMarker";
 
@@ -32,7 +35,8 @@ const defaultOptions ={
 	disableDoubleClickZoom: false,
 	fullscreenControl: false,
 	styles: defaultTheme
-}
+};
+
 export const Map = ({location}: MapProps) =>{
 
 	const { isLoaded } = useJsApiLoader({

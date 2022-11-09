@@ -1,19 +1,25 @@
 .labelMap {
 	@apply bg-darkBlue text-white flex justify-center font-novaRegular
 	items-center pt-[31px] pb-5  rounded-t-lg lg:bg-labelMapBG lg:bg-center lg:font-robotoRegular;
+	foo: bar;
 }
 .title {
 	@apply text-[16px] leading-6 font-novaBold lg:text-[20px];
+	foo: bar;
 }
 .address {
 	@apply flex mt-[17px] text-[#E7EAF0] lg:text-white lg:mt-2;
+	foo: bar;
 }
 .phone {
 	@apply mt-2 text-mobileSilver lg:text-white;
+	foo: bar;
 }
 .email {
 	@apply text-mobileSilver lg:text-white;
+	foo: bar;
 }
 .marker {
 	@apply mr-2;
+	foo: bar;
 }

@@ -1,4 +1,6 @@
+//Images
 import share from "assets/images/share.svg";
+//CSS
 import styles from "./DetailsTop.module.scss";
 
 export const DetailsTop = () =>{

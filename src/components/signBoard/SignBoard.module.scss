@@ -1,9 +1,12 @@
 .signBoard {
 	@apply w-full h-full flex justify-center items-center border rounded-lg font-novaBold;
+	foo: bar;
 }
 .blue {
 	@apply border border-singBoardBlue bg-singBoardBlue text-singBoardBlue;
+	foo: bar;
 }
 .yellow {
 	@apply border border-singBoardYellow bg-singBoardYellow text-singBoardYellow;
+	foo: bar;
 }

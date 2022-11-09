@@ -3,7 +3,9 @@ import styles from "./JobList.module.scss";
 import {Job} from "components/Job/Job";
 //Types
 import {Jobs} from "type";
+//Images
 import Preload from "assets/images/preload.svg";
+
 interface JobListProps {
 	jobs: Jobs,
 	getJobId: (id:string) => void

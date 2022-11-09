@@ -1,3 +1,4 @@
+//CSS
 import styles from "./DetailsImages.module.scss";
 //Hooks
 import {useRef, useEffect, useState} from "react";
