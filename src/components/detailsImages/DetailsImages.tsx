@@ -12,15 +12,14 @@ export const DetailsImages = ({pictures}: DetailsImagesProps) =>{
 	const carousel = useRef<HTMLUListElement>(null);
 
 	useEffect(() =>{
-		if (carousel) {
-			const imagesList = carousel.current as HTMLUListElement;
 			const getWidth = () =>{
-				setWidth(imagesList.scrollWidth - imagesList.offsetWidth);
+				if (carousel !== undefined && carousel.current !== null) {
+					setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);	
+				}
 			}
 			getWidth();
 			window.addEventListener("resize", getWidth);
 			return () => window.removeEventListener("resize", getWidth);	
-		}
 	}, []);
 
 	return(
