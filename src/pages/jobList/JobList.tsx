@@ -1,5 +1,4 @@
-//instruments
-import {useEffect, useState} from "react";
+import styles from "./JobList.module.scss";
 //Components
 import {Job} from "components/Job/Job";
 //Types
@@ -11,14 +10,15 @@ interface JobListProps {
 }
 
 export const JobList = ({jobs, getJobId}: JobListProps) =>{
+
 	return(
-		<main className="main bg-cover">
+		<main className={styles.main}>
 		{
-		!jobs && <img src={Preload} alt="preload" />
+		jobs.length < 1 && <img src={Preload} alt="preload" className={styles.preload} />
 		}
 		{
 		jobs && 
-				<div className="max-w-[1440px] mx-auto p-2.5">
+				<div className={styles.jobList}>
 					<ul>
 						{
 							jobs ? jobs.map(job => <Job key={job.id} job={job} getJobId={getJobId}/>) : null

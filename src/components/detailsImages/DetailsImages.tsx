@@ -1,27 +1,30 @@
 import styles from "./DetailsImages.module.scss";
 //Hooks
-import {useRef, useEffect, useState, Ref} from "react";
+import {useRef, useEffect, useState} from "react";
 import {motion} from "framer-motion";
+
 interface DetailsImagesProps {
 	pictures: string[]
 }
 export const DetailsImages = ({pictures}: DetailsImagesProps) =>{
 	const [width, setWidth] = useState<number>(0);
-	const carousel = useRef<any>(null);
-	let offsetWidth = 640;
-	let scroll:number;
-	if (carousel.current) {
-		offsetWidth = carousel.current.offsetWidth;
-		scroll = carousel.current.scrollWidth;
-	}
+	const carousel = useRef<HTMLUListElement>(null);
+
 	useEffect(() =>{
-		setWidth(scroll - offsetWidth);
-		console.log(offsetWidth);
-	}, [offsetWidth]);
+		if (carousel) {
+			const imagesList = carousel.current as HTMLUListElement;
+			const getWidth = () =>{
+				setWidth(imagesList.scrollWidth - imagesList.offsetWidth);
+			}
+			getWidth();
+			window.addEventListener("resize", getWidth);
+			return () => window.removeEventListener("resize", getWidth);	
+		}
+	}, []);
 
 	return(
-		<motion.section className={styles.carousel} ref={carousel}>
-			<motion.ul className={styles.innerCarousel} drag="x" dragConstraints={{right: 0, left: -width}}>
+		<motion.section className={styles.carousel} >
+			<motion.ul className={styles.innerCarousel} ref={carousel} key={width} drag="x" dragConstraints={{right: 0, left: -width}}>
 				{
 					pictures.map((picture, index) =>(
 						<motion.li key={index} className={styles.item}>

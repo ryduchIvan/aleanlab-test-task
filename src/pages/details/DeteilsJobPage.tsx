@@ -77,7 +77,7 @@ export const DetailsJobPage = ({job}: DetailsPageProps) =>{
 					<h2 className={styles.titleMap}>Contacts</h2>
 					<div className={styles.map}>
 						<LabelMap name={job.name} addres={job.address} email={job.email} phone={job.phone}/>
-						<Map location={testCenter}/>
+						<Map location={job.location}/>
 					</div>
 				</div>
 			}

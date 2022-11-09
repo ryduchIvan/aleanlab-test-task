@@ -1,5 +1,5 @@
 .carousel {
-	@apply mt-[21px] cursor-grab overflow-hidden border border-red-500 max-w-[620px] overflow-hidden;
+	@apply mt-[21px] cursor-grab overflow-hidden  max-w-[620px] overflow-hidden;
 }
 .innerCarousel {
 	@apply flex w-full;

@@ -1,0 +1,9 @@
+.main {
+	@apply bg-cover;
+}
+.jobList {
+	@apply max-w-[1420px] mx-auto p-2.5 min-h-[100vh];
+}
+.preload {
+	@apply absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%];
+}

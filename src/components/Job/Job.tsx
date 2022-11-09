@@ -47,7 +47,7 @@ export const Job = ({job, getJobId}: JobProps) =>{
 					</div>
 					<div className={styles.date}>
 						<img src={bookMarks} alt="bookMarks" className={styles.bookMarks} />
-						<span className={styles.thin_text}>{date}</span>
+						<span className={styles.dateText}>{date}</span>
 					</div>
 				</div>
 			</div>
