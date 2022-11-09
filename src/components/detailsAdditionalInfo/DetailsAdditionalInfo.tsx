@@ -1,29 +1,23 @@
 import { SignBoard } from "components/signBoard/SignBoard";
-import styles from "./DetailsAdditional.module.scss";
+import styles from "./DetailsAdditionalInfo.module.scss";
 
 interface DetailsAdditionalInfoProps{
-	benefist: string[],
-	employmentType: string[]
+	list: string[],
+	theme: "yellow" | "blue",
+	title: "Benefists" | "Employment type"
 }
 
 
-export const DetailsAdditionalInfo = ({benefist, employmentType}: DetailsAdditionalInfoProps) =>{
+export const DetailsAdditionalInfo = ({title, list, theme}: DetailsAdditionalInfoProps) =>{
 	return(
-		<section>
-			<h2 className={styles.title}>Additianal info</h2>
+		<section className={styles.additionalInfo}>
 			<div className={styles.info}>
-				<p className={styles.subtitle}>Employment type</p>
+				<p className={styles.subtitle}>{title}</p>
 				<ul className={styles.row}>
-					{employmentType.map(item => <li key={item} className={styles.col}>
-						<SignBoard title={item}/>
+					{list.map(item => <li key={item} className={styles.col}>
+						<SignBoard title={item} theme={theme}/>
 					</li>)}
 				</ul>
-			</div>
-			<div className={styles.info}>
-				<p className={styles.subtitle}>Benefits</p>
-					<ul className={styles.row}>
-						{benefist.map(item => <li key={item} className={styles.col}><SignBoard title={item} theme="yellow"/></li>)}
-					</ul>
 			</div>
 		</section>
 	)

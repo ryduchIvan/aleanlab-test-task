@@ -2,7 +2,7 @@
   @apply bg-mobile flex items-center w-full pt-4 pb-6 px-4 mb-2 rounded-lg shadow-md md:bg-white md:py-6;
 }
 .img {
-  @apply rounded-full block mr-4 max-w-[85px] max-h-[85px] w-[100%] md:mr-6;
+  @apply rounded-full block mr-4 max-w-[85px] max-h-[85px] w-[100%] md:mr-[26px];
 }
 .row {
   @apply flex justify-between w-full flex-col-reverse md:flex-row;
@@ -18,13 +18,13 @@
   @apply max-w-[712px];
 }
 .title {
-  @apply font-novaRegular text-lg text-primaryBlue  tracking-tightest md:font-novaBold md:text-xl;
+  @apply font-novaRegular text-lg text-mobileBlue  tracking-tightest md:font-novaBold md:text-xl;
 }
 .thin_text {
   @apply block text-primarySilver tracking-[0.2px] font-novaRegular;
 }
 .benefits {
-  @apply flex justify-start;
+  @apply flex justify-start mt-1;
 }
 .benefit {
   @apply relative ml-4 before:content-[""] before:block before:w-1 before:h-1 before:bg-primarySilver before:rounded-full before:absolute

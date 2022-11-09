@@ -3,7 +3,7 @@ import styles from "./Job.module.scss";
 //Images
 import Location from "assets/images/location.svg";
 import Star from "assets/images/star.svg";
-import bookMarks from "assets/images/bookmark.svg";
+import bookMarks from "assets/images/bookMark.svg";
 //Instrumets
 import {Link} from "react-router-dom";
 //Types
@@ -16,6 +16,7 @@ interface JobProps {
 
 export const Job = ({job, getJobId}: JobProps) =>{
 	const {id, name, email, phone, title, salary, address, benefits, location, pictures, createdAt, updatedAt, description, employment_type} = job;
+	const date = new Date(createdAt).toString().slice(0,15);
 	return (
 		<li className={styles.job}>
 			<img src={pictures[0]} className={styles.img} alt="avatar"/>
@@ -46,7 +47,7 @@ export const Job = ({job, getJobId}: JobProps) =>{
 					</div>
 					<div className={styles.date}>
 						<img src={bookMarks} alt="bookMarks" className={styles.bookMarks} />
-						<span className={styles.thin_text}>Posted 2 days ago</span>
+						<span className={styles.thin_text}>{date}</span>
 					</div>
 				</div>
 			</div>

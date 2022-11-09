@@ -1,14 +1,17 @@
+.preload {
+	@apply absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%];
+}
 .detailsContainer {
-	@apply max-w-[1256px] mx-auto py-14;
+	@apply max-w-[1305px] mx-auto pb-[37px] pt-6 px-[15px] text-primaryBlue lg:py-[66px] lg:px-6;
 }
 .row {
-	@apply flex justify-between;
+	@apply flex flex-col lg:flex-row lg:justify-between;
 }
 .info {
-	@apply pr-[52px] w-full mr-[82px] text-primaryBlue;
+	@apply pr-[0px] w-full mr-[0px] lg:pr-[56px] lg:mr-[82px];
 }
 .btnBack {
-	@apply w-[213px] h-[50px] relative right-20 block text-xs bg-[#e4e5ea] font-novaSemiBold rounded-xl;
+	@apply w-[213px] hidden h-[50px] relative right-0 text-xs bg-[#e4e5ea] font-novaSemiBold rounded-xl lg:block 1.5xl:right-20;
 }
 .arrowRoute {
 	@apply absolute top-[16px] left-[23px];
@@ -17,5 +20,11 @@
 	@apply absolute top-[18px] left-[52px];
 }
 .map {
-	@apply max-w-[402px] w-full border border-blue-400;
+	@apply max-w-[402px] w-full mx-auto;
+}
+.titleMap {
+	@apply block font-novaBold text-[28px] border-b pb-[9px] mb-[21px] lg:hidden;
+}
+.additionalInfoBox {
+	@apply flex flex-col-reverse lg:flex-col;
 }

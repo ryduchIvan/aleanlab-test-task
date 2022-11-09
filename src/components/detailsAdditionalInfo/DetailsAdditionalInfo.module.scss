@@ -1,8 +1,5 @@
-.title {
-	@apply font-novaBold text-[28px] border-b pb-2 mb-[15px];
-}
 .info {
-	@apply mt-6;
+	@apply mt-[15px];
 	&::last-child {
 		@apply mt-0;
 	}
@@ -14,7 +11,7 @@
 	@apply mt-[10px] flex;
 }
 .col {
-	@apply mr-2;
+	@apply mr-2 w-[222px] h-[49px];
 	&::last-child {
 		@apply mr-0;
 	}

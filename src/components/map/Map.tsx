@@ -1,46 +1,71 @@
-import {useState, useRef, useCallback} from "react";
+import { useRef, useCallback} from "react";
 import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
+import {defaultTheme} from "./theme";
+import { CustomMarker } from "components/customMarker/customMarker";
+
+interface MapProps {
+	location: {
+		lat: number,
+		long: number
+	}
+}
+
 const APIKEY = process.env.REACT_APP_API_KEY;
 
 const containerStyle = {
-	width: '400px',
-	height: '400px'
-  };
-  
+	width: '100%',
+	height: '249px',
+	borderBottomLeftRadius: "8px",
+	borderBottomRightRadius: "8px",
+};
 
-interface MapProps {
-	center: any
+const defaultOptions ={
+	panControl: false,
+	IzoomControl: false,
+	mapTypeControl: false,
+	scaleControl: false,
+	streetViewControl: false,
+	rotateControl: false,
+	clickableIcons: false,
+	keyboardShortcuts: false,
+	scrollwheel: false,
+	disableDoubleClickZoom: false,
+	fullscreenControl: false,
+	styles: defaultTheme
 }
-export const Map = ({center}: MapProps) =>{
+export const Map = ({location}: MapProps) =>{
 
 	const { isLoaded } = useJsApiLoader({
 		id: 'google-map-script',
 		googleMapsApiKey: APIKEY ? APIKEY : ""
 	  })
+
+	const center ={
+		lat: location.lat,
+		lng: location.long
+	}
 	
-	  const [map, setMap] = useState(null)
+	const mapRef = useRef(undefined);
+
 	
-	  const onLoad = useCallback(function callback(map:any) {
-		// This is just an example of getting and using the map instance!!! don't just blindly copy!
-		const bounds = new window.google.maps.LatLngBounds(center);
-		map.fitBounds(bounds);
+	const onLoad = useCallback(function callback(map:any) {
+		mapRef.current = map;
+	}, [])
 	
-		setMap(map)
-	  }, [])
-	
-	  const onUnmount = useCallback(function callback(map: any) {
-		setMap(null)
-	  }, [])
+	const onUnmount = useCallback(function callback(map: any) {
+		mapRef.current = undefined;
+	}, [])
 	
 	  return isLoaded ? (
 		  <GoogleMap
 			mapContainerStyle={containerStyle}
 			center={center}
-			zoom={10}
+			zoom={14}
 			onLoad={onLoad}
 			onUnmount={onUnmount}
+			options={defaultOptions}
 		  >
-			{ /* Child components, such as markers, info windows, etc. */ }
+			<CustomMarker center={center}/>
 			<></>
 		  </GoogleMap>
 	  ) : <></>

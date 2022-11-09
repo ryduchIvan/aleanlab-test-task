@@ -1,18 +1,36 @@
 import styles from "./DetailsImages.module.scss";
+//Hooks
+import {useRef, useEffect, useState, Ref} from "react";
+import {motion} from "framer-motion";
 interface DetailsImagesProps {
 	pictures: string[]
 }
 export const DetailsImages = ({pictures}: DetailsImagesProps) =>{
+	const [width, setWidth] = useState<number>(0);
+	const carousel = useRef<any>(null);
+	let offsetWidth = 640;
+	let scroll:number;
+	if (carousel.current) {
+		offsetWidth = carousel.current.offsetWidth;
+		scroll = carousel.current.scrollWidth;
+	}
+	useEffect(() =>{
+		setWidth(scroll - offsetWidth);
+		console.log(offsetWidth);
+	}, [offsetWidth]);
+
 	return(
-		<section>
-			<h2 className={styles.title}>Attached images</h2>
-			<ul className={styles.row}>
+		<motion.section className={styles.carousel} ref={carousel}>
+			<motion.ul className={styles.innerCarousel} drag="x" dragConstraints={{right: 0, left: -width}}>
 				{
-					pictures.map((picture, index) => <li key={index} className={styles.col}>
-						<img src={picture} alt="additional img" className={styles.img} />
-					</li>)
+					pictures.map((picture, index) =>(
+						<motion.li key={index} className={styles.item}>
+							<img src={picture} alt="additional img" className={styles.img} />
+						</motion.li>
+					) 
+					)
 				}
-			</ul>
-		</section>
+			</motion.ul>
+		</motion.section>
 	)
 }

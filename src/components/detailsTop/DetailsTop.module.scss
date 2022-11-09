@@ -1,18 +1,21 @@
 .row {
-	@apply flex items-center justify-between;
+	@apply flex flex-col justify-between lg:flex-row lg:items-center lg:border-b lg:pb-[9px];
 }
 .title {
-	@apply font-novaBold text-[28px];
+	@apply font-novaBold text-[28px] border-b pb-3 lg:border-none;
 }
 .options {
-	@apply flex items-center;
+	@apply flex items-center mt-6 lg:mt-0;
 }
 .option {
-	@apply flex items-center mr-6 font-robotoRegular;
+	@apply flex items-center mr-8 font-robotoRegular lg:mt-6;
 	&:last-child {
 		@apply mr-0;
 	}
 }
 .icon {
 	@apply mr-2;
+}
+.iconList {
+	@apply bg-mobileStar  w-5 h-7 bg-no-repeat bg-center bg-auto lg:bg-bookMark;
 }

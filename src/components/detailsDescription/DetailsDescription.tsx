@@ -11,9 +11,9 @@ export const DetailsDescription = ({description}: DetailsDescriptionProps) =>{
 		<div className={styles.description}>
 			<p className={styles.text}>{trimmedString[1]}</p>
 			<p className={`${styles.text} ${styles.bold}`}>{trimmedString[3]}</p>
-			<p className={styles.text}>{trimmedString[4]}</p>
-			<p className={`${styles.text} ${styles.bold}`} >{trimmedString[6]}</p>
-			<p className="mt-3">Our physicians enjoy a wide range of benefits, including:</p>
+			<p className={`${styles.text} ${styles.mobileText}`}>{trimmedString[4]}</p>
+			<p className={`${styles.text} ${styles.bold}`}>{trimmedString[6]}</p>
+			<p className="mt-6 lg:mt-3">Our physicians enjoy a wide range of benefits, including:</p>
 			{
 				<ul>
 					{
