@@ -1,7 +1,7 @@
 {
   "name": "aleanlab-test-task",
+  "homepage": "https://ryduchIvan.github.io/aleanlab-test-task",
   "version": "0.1.0",
-  "homepage": "https:/ryduchIvan.github.io/aleanlab-test-task",
   "private": true,
   "dependencies": {
     "@react-google-maps/api": "^2.16.0",
