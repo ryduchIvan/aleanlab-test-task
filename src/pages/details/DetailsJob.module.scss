@@ -16,6 +16,9 @@
 }
 .btnBack {
 	@apply w-[213px] hidden h-[50px] relative right-0 text-xs bg-[#e4e5ea] font-novaSemiBold rounded-xl lg:block 1.5xl:right-20;
+	&:hover {
+		@apply bg-blue-300 transition duration-300 ease-in-out;
+	}
 	foo: bar;
 }
 .arrowRoute {

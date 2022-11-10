@@ -24,6 +24,9 @@
 }
 .title {
   @apply font-novaRegular text-lg text-mobileBlue tracking-tightest md:font-novaBold md:text-xl;
+  &:hover {
+    @apply text-blue-900 transition duration-300 ease-in-out;
+  }
   foo: bar;
 }
 .thin_text {
