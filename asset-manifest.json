@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/aleanlab-test-task/static/css/main.41b01ac6.css",
+    "main.css": "/aleanlab-test-task/static/css/main.e8317b3d.css",
     "main.js": "/aleanlab-test-task/static/js/main.a8ac34fa.js",
     "static/js/787.e411ae00.chunk.js": "/aleanlab-test-task/static/js/787.e411ae00.chunk.js",
     "static/media/Roboto-Regular.ttf": "/aleanlab-test-task/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
@@ -18,12 +18,12 @@
     "static/media/WhiteMarker.svg": "/aleanlab-test-task/static/media/WhiteMarker.017f13f438e4e84738b89f28128b4c49.svg",
     "static/media/bookMark.svg": "/aleanlab-test-task/static/media/bookMark.49e88a2e5b231b4508360cfaf0dc5d1e.svg",
     "static/media/location.svg": "/aleanlab-test-task/static/media/location.1c093ca173a538132f1ce31ab6296061.svg",
-    "main.41b01ac6.css.map": "/aleanlab-test-task/static/css/main.41b01ac6.css.map",
+    "main.e8317b3d.css.map": "/aleanlab-test-task/static/css/main.e8317b3d.css.map",
     "main.a8ac34fa.js.map": "/aleanlab-test-task/static/js/main.a8ac34fa.js.map",
     "787.e411ae00.chunk.js.map": "/aleanlab-test-task/static/js/787.e411ae00.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.41b01ac6.css",
+    "static/css/main.e8317b3d.css",
     "static/js/main.a8ac34fa.js"
   ]
 }
