@@ -1,43 +1,33 @@
 .preload {
 	@apply absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%];
-	foo: bar;
 }
 .detailsContainer {
 	@apply max-w-[1305px] mx-auto pb-[37px] pt-6 px-[15px] text-primaryBlue lg:py-[66px] lg:px-6;
-	foo: bar;
 }
 .row {
 	@apply flex flex-col lg:flex-row lg:justify-between;
-	foo: bar;
 }
 .info {
 	@apply pr-[0px] w-full mr-[0px] lg:pr-[56px] lg:mr-[82px];
-	foo: bar;
 }
 .btnBack {
 	@apply w-[213px] hidden h-[50px] relative right-0 text-xs bg-[#e4e5ea] font-novaSemiBold rounded-xl lg:block 1.5xl:right-20;
 	&:hover {
 		@apply bg-blue-300 transition duration-300 ease-in-out;
 	}
-	foo: bar;
 }
 .arrowRoute {
 	@apply absolute top-[16px] left-[23px];
-	foo: bar;
 }
 .textRoute {
 	@apply absolute top-[18px] left-[52px];
-	foo: bar;
 }
 .map {
 	@apply max-w-[402px] w-full mx-auto;
-	foo: bar;
 }
 .titleMap {
 	@apply block font-novaBold text-[28px] border-b pb-[9px] mb-[21px] lg:hidden;
-	foo: bar;
 }
 .additionalInfoBox {
 	@apply flex flex-col-reverse lg:flex-col;
-	foo: bar;
 }

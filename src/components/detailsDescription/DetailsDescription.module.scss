@@ -1,21 +1,17 @@
 .description {
 	@apply text-[18px] text-mobileBlue leading-6 lg:font-robotoRegular lg:text-primaryBlue;
-	foo: bar;
 }
 .text {
 	@apply mt-6;
 	&::first-child {
 		@apply mt-0;
 	}
-	foo: bar;
 }
 .mobileText {
 	@apply mt-0 lg:mt-6;
-	foo: bar;
 }
 .bold {
 	@apply font-novaBold text-[20px] leading-[25px] text-primaryBlue;
-	foo: bar;
 }
 .benefit {
 	@apply relative ml-8 before:content-[""] before:absolute before:block before:h-[9px] before:w-[9px] before:bg-primarySilver 
@@ -25,5 +21,4 @@
 	
 	lg:before:content-[""] lg:before:absolute lg:before:block lg:before:h-[9px] lg:before:w-[9px] lg:before:bg-primarySilver 
 	lg:before:top-[3px] lg:before:left-[-20px];
-	foo: bar;
 }

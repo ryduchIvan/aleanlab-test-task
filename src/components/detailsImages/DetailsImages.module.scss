@@ -1,19 +1,15 @@
 .carousel {
 	@apply mt-[21px] cursor-grab overflow-hidden  max-w-[620px] overflow-hidden;
-	foo: bar;
 }
 .innerCarousel {
 	@apply flex w-full;
-	foo: bar;
 }
 .item {
 	@apply mr-[10px] min-w-[200px] h-[115px];
 	&::last-child {
 		@apply mr-0;
 	}
-	foo: bar;
 }
 .img {
 	@apply w-full h-full rounded-lg pointer-events-none;
-	foo: bar;
 }

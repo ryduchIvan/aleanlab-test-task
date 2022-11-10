@@ -1,14 +1,11 @@
 .job {
   @apply bg-mobile flex items-center w-full pt-4 pb-6 px-4 mb-2 rounded-lg shadow-md md:bg-white md:py-6;
-  foo: bar;
 }
 .img {
   @apply rounded-full block mr-4  max-h-[85px] w-[100%] md:mr-[26px] max-w-[85px];
-  foo: bar;
 }
 .row {
   @apply flex justify-between w-full flex-col-reverse md:flex-row;
-  foo: bar;
 }
 .item {
   @apply flex items-center justify-between;
@@ -16,26 +13,21 @@
   &:last-child {
     @apply mb-3 md:mb-0;
   }
-  foo: bar;
 }
 .info__container {
   @apply max-w-[712px];
-  foo: bar;
 }
 .title {
   @apply font-novaRegular text-lg text-mobileBlue tracking-tightest md:font-novaBold md:text-xl;
   &:hover {
     @apply text-blue-900 transition duration-300 ease-in-out;
   }
-  foo: bar;
 }
 .thin_text {
   @apply block text-primarySilver tracking-[0.2px] font-novaRegular;
-  foo: bar;
 }
 .benefits {
   @apply flex justify-start mt-1;
-  foo: bar;
 }
 .benefit {
   @apply relative ml-4 before:content-[""] before:block before:w-1 before:h-1 before:bg-primarySilver before:rounded-full before:absolute
@@ -46,29 +38,22 @@
   &:last-child {
     @apply before:hidden;
   }
-  foo: bar;
 }
 .location {
   @apply flex mt-2 mr-2;
-  foo: bar;
 }
 .stars {
   @apply flex align-middle h-[100%] items-center mt-auto mb-auto mr-8;
-  foo: bar;
 }
 .star {
   @apply w-[10px] h-[10px] opacity-60 md:w-[19px] md:h-[19px] md:opacity-100;
-  foo: bar;
 }
 .date {
   @apply text-end flex flex-col items-end justify-between h-[100%];
-  foo: bar;
 }
 .dateText {
   @apply font-novaLight text-[13px] text-primarySilver md:font-novaRegular md:text-[16px];
-  foo: bar;
 }
 .bookMarks {
   @apply hidden md:inline;
-  foo: bar;
 }

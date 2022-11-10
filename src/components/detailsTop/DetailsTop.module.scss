@@ -1,27 +1,21 @@
 .row {
 	@apply flex flex-col justify-between lg:flex-row lg:items-center lg:border-b lg:pb-[9px];
-	foo: bar;
 }
 .title {
 	@apply font-novaBold text-[28px] border-b pb-3 lg:border-none;
-	foo: bar;
 }
 .options {
 	@apply flex items-center mt-6 lg:mt-0;
-	foo: bar;
 }
 .option {
 	@apply flex items-center mr-8 font-robotoRegular lg:mt-6;
 	&:last-child {
 		@apply mr-0;
 	}
-	foo: bar;
 }
 .icon {
 	@apply mr-2;
-	foo: bar;
 }
 .iconList {
 	@apply bg-mobileStar  w-5 h-7 bg-no-repeat bg-center bg-auto lg:bg-bookMark;
-	foo: bar;
 }
